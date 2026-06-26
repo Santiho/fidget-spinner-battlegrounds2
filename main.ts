@@ -1051,13 +1051,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.NPC, function (sprite, otherSpri
         )
     }
 })
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (skip == 1) {
-        skip = 2
-        sprites.destroy(bg)
-        setworld()
-    }
-})
 function SpinnerSet () {
     tiles.placeOnTile(mainSpinner, mySprite.tilemapLocation())
     mainSpinner.follow(mySprite)
@@ -5369,7 +5362,6 @@ let spinDensity = 0
 let bg: Sprite = null
 let GameStart = 0
 let skip = 0
-skip = 0
 GameStart = 0
 namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 320
