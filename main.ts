@@ -1051,10 +1051,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.NPC, function (sprite, otherSpri
         )
     }
 })
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-    sprites.destroy(bg)
-    setworld()
-})
 function SpinnerSet () {
     tiles.placeOnTile(mainSpinner, mySprite.tilemapLocation())
     mainSpinner.follow(mySprite)
